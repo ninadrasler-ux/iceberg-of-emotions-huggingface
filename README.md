@@ -4,6 +4,7 @@ Titanic already had its emotional moment in the spotlight. But what happens when
 In my previous project, Titanic: Iceberg of Emotions, I explored emojis and sentiment using VADER. This time, I’m taking the same tiny pool of Titanic comments and giving them to Hugging Face’s DistilBERT to see how it reads their emotional tone — and how confident it is about what it sees.
 Same comments. Different model. Let’s see if they tell the same story. 🚢
 
+---
 
 ## ❓ What was I trying to understand?
 
@@ -15,6 +16,7 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 
 ### 🔄 **How does Hugging Face compare with VADER on the same comments?**
 
+---
 
 ## 🧪 Method: How the data was collected and processed
 
@@ -31,6 +33,7 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 - Compared the Hugging Face results with the previous VADER analysis.
 - As a small exploratory check, inspected the 10 comments with the **highest** and **lowest** confidence scores.
 
+---
 
 ## 📊 Results
 
@@ -44,6 +47,7 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 - **Comments with emojis:** 0.9846
 - **Comments without emojis:** 0.9745
 
+---
 
 ## 📈 Key findings
 
@@ -54,12 +58,16 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 
 The Hugging Face model classified about two-thirds of the comments as positive.
 
+---
+
 ### 🎯 2. The model was highly confident overall
 
 - **Average confidence — comments with emojis: 0.9846**
 - **Average confidence — comments without emojis: 0.9745**
 
 The model was highly confident in both groups. Comments containing emojis had a slightly higher average confidence score, but the difference was very small.
+
+---
 
 ### 🔄 3. Hugging Face and VADER told a similar — but not identical — story
 
@@ -68,6 +76,8 @@ Both approaches found a generally positive tone in the comments.
 VADER classified **58 comments as positive, 17 as negative, and 23 as neutral**, while the Hugging Face model classified **67 as positive and 31 as negative**.
 
 The difference is partly due to the models approaching sentiment differently: VADER provides a continuous sentiment score and includes a neutral category, while the Hugging Face model used here makes a binary positive/negative classification.
+
+---
 
 ### 😀 4. Emojis did not make the model much less confident
 
