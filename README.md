@@ -4,7 +4,7 @@ Titanic already had its emotional moment in the spotlight. But what happens when
 In my previous project, Titanic: Iceberg of Emotions, I explored emojis and sentiment using VADER. This time, I’m taking the same tiny pool of Titanic comments and giving them to Hugging Face’s DistilBERT to see how it reads their emotional tone — and how confident it is about what it sees.
 Same comments. Different model. Let’s see if they tell the same story. 🚢
 
-
+![Titanic Sentiment with Hugging Face](iceberg-of-emoticons-hugging-face.png)
 
 ## ❓ What was I trying to understand?
 
