@@ -4,6 +4,7 @@ Titanic already had its emotional moment in the spotlight. But what happens when
 In my previous project, Titanic: Iceberg of Emotions, I explored emojis and sentiment using VADER. This time, I’m taking the same tiny pool of Titanic comments and giving them to Hugging Face’s DistilBERT to see how it reads their emotional tone — and how confident it is about what it sees.
 Same comments. Different model. Let’s see if they tell the same story. 🚢
 
+
 ## ❓ What was I trying to understand?
 
 ### 🤖 **How does a transformer model classify Titanic comments?**
@@ -13,6 +14,7 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 ### 😀 **Does model confidence differ between comments with and without emojis?**
 
 ### 🔄 **How does Hugging Face compare with VADER on the same comments?**
+
 
 ## 🧪 Method: How the data was collected and processed
 
@@ -29,6 +31,7 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 - Compared the Hugging Face results with the previous VADER analysis.
 - As a small exploratory check, inspected the 10 comments with the **highest** and **lowest** confidence scores.
 
+
 ## 📊 Results
 
 ### 🤖 Sentiment classification
@@ -41,7 +44,8 @@ Same comments. Different model. Let’s see if they tell the same story. 🚢
 - **Comments with emojis:** 0.9846
 - **Comments without emojis:** 0.9745
 
-- ## 📈 Key findings
+
+## 📈 Key findings
 
 ### 🤖 1. The model classified most comments as positive
 
